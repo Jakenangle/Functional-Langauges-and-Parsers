@@ -1,0 +1,9 @@
+--this is a comment
+
+and so is --this
+--I can have \n\n\n\\_any_ characters in a comment
+
+a:Int;()--comment
+
+--a:Int;()--
+----also a comment

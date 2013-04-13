@@ -1,0 +1,4 @@
+#name "stringsandinvalid.cool"
+#2 STR_CONST "fjdksllfjds \nfjdksjfklds"
+#3 ERROR "!"
+#5 STR_CONST "fjdksllfjds \nfjdksjfklds"

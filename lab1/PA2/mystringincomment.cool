@@ -1,0 +1,3 @@
+-- can they handle EOF in "--" state?
+1
+-- new no EOF

@@ -1,0 +1,15 @@
+#name "signedints.cool"
+#1 OBJECTID two
+#1 OBJECTID tokens
+#1 ':'
+#1 '+'
+#1 INT_CONST 10
+#2 OBJECTID also
+#2 OBJECTID two
+#2 ':'
+#2 '-'
+#2 INT_CONST 99
+#3 OBJECTID just
+#3 OBJECTID one
+#3 ':'
+#3 INT_CONST 4

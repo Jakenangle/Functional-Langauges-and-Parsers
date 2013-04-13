@@ -1,0 +1,13 @@
+#name "objects.cool"
+#1 OBJECTID i
+#2 OBJECTID foo
+#3 OBJECTID bar
+#4 OBJECTID baz
+#5 OBJECTID qux
+#6 OBJECTID vARIABLE
+#7 OBJECTID variable1
+#8 OBJECTID under_score
+#9 OBJECTID numbers1234567890
+#10 OBJECTID numbers1234567890andText
+#11 OBJECTID a1b2c3d4e5f_6_g7
+#12 OBJECTID un_d____ER_____SCORE

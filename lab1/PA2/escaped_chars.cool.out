@@ -1,0 +1,10 @@
+#name "escaped_chars.cool"
+#1 ERROR "\\"
+#1 OBJECTID n
+#1 ERROR "\\"
+#1 OBJECTID t
+#1 ERROR "\\"
+#1 OBJECTID b
+#1 ERROR "\\"
+#1 INT_CONST 0
+#2 STR_CONST "\n\t\b0"

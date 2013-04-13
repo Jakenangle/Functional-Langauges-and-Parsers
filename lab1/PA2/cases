@@ -1,0 +1,79 @@
+# cases file format:
+#
+# filename; points; comment; I/N; filtername;
+#
+# the trailing semicolon is optional.  no newlines are allowed in the comment.
+# test may be commented out using a '#' (sh/perl style comments).
+#
+# I tests are Interactive, while N tests are Not.
+# I/N and filtername may be omitted, and if they are, the test is 
+# non-interactive and uses the filter PA#-filter
+# 
+# at some point in the file, a line of the format:
+#
+# maxscore = #
+#
+# must exist in the file.  this line specifies the maximum possible score 
+# on the assignment.
+#
+
+maxscore = 55
+
+1024string.cool; 1; str const 1024 length
+eofmulticomment.cool; 1; Err-EOF in multiline comment
+eofsinglecomment.cool; 1; EOF in single line comment (Valid)
+eofstring.cool; 1; EOF in string (Err)
+endcomment.cool; 1; Just a '*)' (Err)
+comment_in_string.cool; 1; Comments inside string
+escapedeof.cool; 1; Escaped EOF in string constant
+escapednull.cool; 1; Escaped NULL in string constant
+badkeywords.cool; 1; Mostly mis-spelt keywords (should return identifiers)
+escaped_chars.cool; 1; Just escaped characters
+objectid.cool; 1; Lots of tests with OBJECTIDs
+operators.cool; 1; Tests all operators
+longstring.cool; 1; String constant > 1024 characters (Error)
+null_in_code.cool; 1; NULL Char in middle of code
+null_in_comment.cool; 1; NULL char inside comment (valid)
+null_in_string_followed_by_tokens.cool; 1; NULL in middle of string
+self.cool; 1; Distinguishes OBJECTID and TYPEID
+stringwithescapes.cool; 1; Len > 1024 with escapes, 1024 after removing them (valid)
+empty.cool; 1; Empty file
+twice_512_nested_comments.cool; 1; Heavily (512) nested comments
+numobject.cool; 1; numeric constant followed by object w/o whitespace
+onelinecomment.cool; 1; Variations of single line comments
+stringcomment.cool; 1; Comments inside strings and strings inside comments
+signedints.cool; 1; Tests signed integers
+invalidinvisible.cool; 1; Invalid invisible characters
+escapedquote.cool; 1; End quote of string constant escaped (Error)
+escapedunprintables.cool; 1; Escaped unprintable characters in string
+integers2.cool; 1; list of integers, really long ints, hexadecimal representation
+backslash.cool; 1; Tests escaped \0, escaped newline, etc
+backslash2.cool; 1; Tests escaped newlines (valid + invalid cases)
+keywords.cool; 1; list of keywords (mix of uppercase and lowercase characters)
+nestedcomments.cool; 1; Lots of nested comments and some stray (*s
+objects.cool; 1; Lots of objects with several oddities
+simplestrings.cool; 1; Tests variations of string constants
+dash.cool; 1; Subtle: Just a '-'
+closecomment.cool; 1; Just a '*)': Should be seen as error, not two tokens
+badidentifiers.cool; 1; Identifiers starting with numbers, _, other single chars
+binary.cool; 1; String constant with non-printable chars (except NULL, valid)
+invalidcharacters.cool; 1;  A lot of invalid characters
+whitespaces.cool; 1; Various forms of white spaces (blanks, formfeeds, etc)
+commentsandinvalids.cool; 1; Combinations of multiline comments, “ and invalid chars
+multilinecomment.cool; 1; Lots of multiline comments
+longcomment.cool; 1; Lot of weirdly nested comments
+types.cool; 1; Different types of TYPEIDs
+pathologicalstrings.cool; 1; Different types of string constant, edge cases
+sort_list.cool; 1; Cool program to sort a list
+arith.cool; 1; Large valid Cool program
+life.cool; 1; Big Cool Program
+crashtest.cool; 1; Large binary file (lots of errors)
+weirdcharcomment.cool; 1; Multiline comments with unprintable chars
+stringsandinvalid.cool; 1; Two string constants with invalid char between
+hairyscary.cool; 1; Large valid Cool program
+stringsquoteserrors.cool; 1; Sequence of strings, quotes
+stringincomment.cool; 1; String in comment
+opencomment.cool; 1; Hanging comment
+null_in_string_unescaped_newline.cool; 1; NULL in string
+
+

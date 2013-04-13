@@ -1,0 +1,8 @@
+#name "nestedcomments.cool"
+#9 INT_CONST 0
+#9 '('
+#9 '('
+#9 ')'
+#9 ')'
+#9 INT_CONST 0
+#10 INT_CONST 0
