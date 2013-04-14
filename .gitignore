@@ -1,0 +1,18 @@
+
+#pdfs
+*.pdf
+
+#backup files
+~*
+
+#sublime project
+*.sublime-project
+*.sublime-workspace
+
+#ignore generated python files
+*.py
+*.pyc
+
+#ignore generated token file
+*.tokens
+
