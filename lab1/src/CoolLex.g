@@ -34,12 +34,12 @@ SEMICOLON : ';' ;
 
 
 
-/* comments */
+ /*Comments */ 
 SL_COMMENT :  
-   ;
+  '--' (.)* '\n' ;
 
-MULTILINECOMMENT
-  ;
+MULTILINECOMMENT :
+  '(*' (.)* '*)'; 
 
 
 /* identifiers */
