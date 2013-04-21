@@ -16,7 +16,7 @@ public class CoolLexer {
       CharStream input = new ANTLRFileStream(args[0]);
       CoolLex lexer = new CoolLex(input);
       Token token;
-      while ((token = lexer.nextToken())!=Token.EOF_TOKEN) {
+      while ((token = lexer.nextToken()).getType()!=-1) {//Lexer.getEOFToken()) { //Token.EOF_TOKEN) {
 	 System.out.println("#" + token.getLine()+ 
 			    " " + map.name((token.getType())) +
 			    " |" +token.getText() + "|");
@@ -47,7 +47,7 @@ class IdMap {
       else {
 	 return array[index];
       }
-      return "Cannot happen";
+      //return "Cannot happen";
    }
 }
 
