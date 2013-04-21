@@ -16,3 +16,7 @@
 #ignore generated token file
 *.tokens
 
+#scratch folder for compiling
+sratch
+scratch/*
+
