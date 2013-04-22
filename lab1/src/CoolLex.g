@@ -24,6 +24,20 @@ CLASS :
 FALSE : 
 	'f' ('a'|'A')('l'|'L')('s'|'S')('e'|'E');
 
+TRUE :
+	't' ('r'|'R')('u'|'U')('e'|'E');
+
+ELSE :
+	('e'|'E')('l'|'L')('s'|'S')('e'|'E');
+
+FI :
+	('f'|'F')('i'|'I');
+
+IF :
+	('i'|'I')('f'|'F');
+
+
+
 /* operators, except for isvoid and not, which are keyword operators */
 
 DOT : 
@@ -55,4 +69,6 @@ ID :
 
 
 /* strings */
+STRING :
+	'"' .* '"';
 
