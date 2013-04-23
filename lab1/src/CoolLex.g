@@ -218,7 +218,7 @@ SL_COMMENT :
  	'--' (.)* '\n';
 
 MULTILINECOMMENT :
- 	'(*' (options {greedy=false;}: (MULTILINECOMMENT | .))* '*)'; //fix later, make it so it can support embeded multiline comment
+ 	'(*' (options {greedy=false;}: (MULTILINECOMMENT | .))* '*)';
 
 
 /* identifiers */
@@ -234,5 +234,4 @@ INT :
 
 /* strings */
 STRING :
-	'"' (options {greedy=false;}: ('\\\\'|'\\"' | .))* '"';//need to add support for /"
-
+	'"' (options {greedy=false;}: ('\\\\'|'\\"' | .))* '"';
