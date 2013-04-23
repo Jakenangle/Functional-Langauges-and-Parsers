@@ -11,8 +11,11 @@ lexer grammar CoolLex;
 fragment UC_LETTER :
 	'A' .. 'Z';
 
-NEW_LINE :
-	'\n';
+SEMICOLON : 
+	';';
+
+WHITESPACE :
+	(' '|'\r'|'\t'|'\u000C'|'\n');
 
 /* keywords */
 
@@ -43,15 +46,6 @@ IF :
 DOT : 
 	'.';
 
-/* punctuation */
-
-SEMICOLON : ';';
-
-
-/* whitespace */
-WHITESPACE :
-	(' '|'\r'|'\t'|'\u000C'|'\n');
-
 
  /*Comments */ 
 SL_COMMENT :  
@@ -66,6 +60,8 @@ ID :
 	('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')*;
 
 /* integer constant */
+INT :
+	('0'..'9')+;
 
 
 /* strings */
