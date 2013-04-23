@@ -121,8 +121,41 @@ IF :
 IN :
 	I N;
 
-INHERITS:
+INHERITS :
 	I N H E R I T S;
+
+ISVOID :
+	I S V O I D;
+
+LET :
+	L E T;
+
+LOOP :
+	L O O P;
+
+POOL :
+	P O O L;
+
+THEN :
+	T H E N;
+
+WHILE :
+	W H I L E;
+
+CASE :
+	C A S E;
+
+ESAC :
+	E S A C;
+
+NEW :
+	N E W;
+
+OF :
+	O F;
+
+NOT :
+	N O T;
 
 
 
