@@ -164,13 +164,37 @@ NOT :
 DOT : 
 	'.';
 
+ADD :
+	'+';
+
+SUB :
+	'-';
+
+DIV : 
+	'/';
+
+MUL :
+	'*';
+
+EQUAL :
+	'=';
+
+LESSEROREQUAL :
+	'<=';
+
+LESS :
+	'<';
+
+ASSIGMENT :
+	'<-';
+
 
  /*Comments */ 
 SL_COMMENT :  
  	'--' (.)* '\n';
 
 MULTILINECOMMENT :
- 	'(*' (.)* '*)'; //fix later
+ 	'(*' (.)* '*)'; //fix later, make it so it can support embeded multiline comment
 
 
 /* identifiers */
@@ -184,5 +208,5 @@ INT :
 
 /* strings */
 STRING :
-	'"' .* '"';
+	'"' .* '"';//need to add support for /"
 
