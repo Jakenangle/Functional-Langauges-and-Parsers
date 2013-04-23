@@ -6,7 +6,7 @@
 lexer grammar CoolLex;
 
 
-/* definitions */
+/*----definitions----*/
 
 fragment A :
 	('a'|'A');
@@ -108,7 +108,9 @@ OPENSQUARE :
 CLOSESQUARE :
 	']';
 
-/* keywords */
+
+
+/*----keywords----*/
 
 CLASS : 
 	C L A S S;
@@ -171,7 +173,8 @@ NOT :
 
 
 
-/* operators, except for isvoid and not, which are keyword operators */
+/*----operators----*/
+/*except for isvoid and not, which are keyword operators */
 
 DOT : 
 	'.';
@@ -210,12 +213,12 @@ DARROW:
 	'=>';
 
 
- /*Comments */ 
+ /*---Comments---*/ 
 SL_COMMENT :  
  	'--' (.)* '\n';
 
 MULTILINECOMMENT :
- 	'(*' (.)* '*)'; //fix later, make it so it can support embeded multiline comment
+ 	'(*' (MULTILINECOMMENT|.)* '*)'; //fix later, make it so it can support embeded multiline comment
 
 
 /* identifiers */
@@ -225,7 +228,6 @@ ID :
 /* integer constant */
 INT :
 	('0'..'9')+;
-
 
 /* strings */
 STRING :
