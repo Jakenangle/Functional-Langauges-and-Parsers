@@ -218,12 +218,15 @@ SL_COMMENT :
  	'--' (.)* '\n';
 
 MULTILINECOMMENT :
- 	'(*' (MULTILINECOMMENT|.)* '*)'; //fix later, make it so it can support embeded multiline comment
+ 	'(*' (options {greedy=false;}: (MULTILINECOMMENT | .))* '*)'; //fix later, make it so it can support embeded multiline comment
 
 
 /* identifiers */
-ID : 
-	('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')*;
+OBJECTID : 
+	('a'..'z') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')*;
+
+TYPEID :
+	('A'..'Z') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')*;
 
 /* integer constant */
 INT :
@@ -231,5 +234,5 @@ INT :
 
 /* strings */
 STRING :
-	'"' .* '"';//need to add support for /"
+	'"' (options {greedy=false;}: ('\\\\'|'\\"' | .))* '"';//need to add support for /"
 
