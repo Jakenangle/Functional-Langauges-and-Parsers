@@ -96,6 +96,12 @@ SEMICOLON :
 WHITESPACE :
 	(' '|'\r'|'\t'|'\u000C'|'\n') {$channel=HIDDEN;};
 
+OPENBRACKET :
+	'{';
+
+CLOSEBRACKET :
+	'}';
+
 /* keywords */
 
 CLASS : 
@@ -187,6 +193,15 @@ LESS :
 
 ASSIGMENT :
 	'<-';
+
+AT :
+	'@';
+
+TILDE :
+	'~';
+
+DARROW:
+	'=>';
 
 
  /*Comments */ 
