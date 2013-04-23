@@ -102,6 +102,12 @@ OPENBRACKET :
 CLOSEBRACKET :
 	'}';
 
+OPENSQUARE :
+	'[';
+
+CLOSESQUARE :
+	']';
+
 /* keywords */
 
 CLASS : 
