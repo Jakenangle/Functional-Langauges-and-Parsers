@@ -1,5 +1,5 @@
-/* your name here
- * CS-435, Spring 2011
+/* Jacob Nangle
+ * CS-435, Spring 2013
  * an ANTLR lexer grammar for Cool
  */
 
@@ -107,6 +107,18 @@ OPENSQUARE :
 
 CLOSESQUARE :
 	']';
+
+OPENPAREN :
+	'(';
+
+CLOSEPAREN :
+	')';
+
+COLON :
+	':';
+
+COMMA:
+	',';
 
 
 
